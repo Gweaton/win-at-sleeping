@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Gweaton/win-at-sleeping/issues"
   },
-  "homepage": "https://github.com/Gweaton/win-at-sleeping#readme"
+  "homepage": "https://github.com/Gweaton/win-at-sleeping#readme",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
 }
