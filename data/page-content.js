@@ -1,5 +1,9 @@
 var pageContent = {
 	"blocks": [{
+		"type": "Heading",
+		"heading": "Win at sleeping",
+		"subheading": "Everyone can improve their sleeping performance. All it takes is a little preparation and the right kit. Which is where we come in."
+	}, {
 		"type": "YouTube",
 		"videoId": "7YwmESPTZFM",
 		"image": "youtube/poster.jpg"
