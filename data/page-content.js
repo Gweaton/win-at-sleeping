@@ -1,4 +1,4 @@
-{
+var pageContent = {
 	"blocks": [{
 		"type": "YouTube",
 		"videoId": "7YwmESPTZFM",
