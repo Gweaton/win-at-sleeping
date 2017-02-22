@@ -28,5 +28,7 @@ window.onload = function() {
 
   displayHeaderContent(pageContent, 'third-header', 'third-subheader', 5);
 
+  displayCarouselContent(pageContent, 6)
+
 
 }
