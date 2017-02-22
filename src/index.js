@@ -15,16 +15,7 @@ window.onload = function() {
   displayHeaderContent(pageContent, 'first-header', 'first-subheader', 0);
   displayHeaderContent(pageContent, 'second-header', 'second-subheader', 2);
 
-  (function displayGridContent(content, blockNumber) {
-    var grid = document.getElementById("ideas");
-    var items = content.blocks[blockNumber].items
-    items.forEach(function(item) {
-      var url = item.url.gben
-      var text = item.text
-      var image = `images/${item.image}`
-      grid.innerHTML += "<div class='item'> <a href='" + url + "'>" + "<img class='grid-image' src='" + image + "'><p>" + text + "</p></a></div>"
-    });
-  })(pageContent, 3);
+  displayGridContent(pageContent, 3);
 
   (function displayLink(content, blockNumber) {
     var link = document.getElementById("sleep-ideas");
