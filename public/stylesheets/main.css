@@ -36,9 +36,14 @@ iframe {
 .item {
   float: left;
   margin: 2%;
-  width: 28%; 
+  width: 28%;
   height: 50%;
   font-size: 12px;
+}
+
+.item a {
+  text-decoration: none;
+  color: black;
 }
 
 .grid-image {
