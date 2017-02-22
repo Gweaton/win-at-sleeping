@@ -58,3 +58,7 @@ iframe {
 .grid-image {
   width: 100%;
 }
+
+.right {
+  transform: scaleX(-1);
+}
