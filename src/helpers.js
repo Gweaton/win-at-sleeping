@@ -15,6 +15,6 @@ function displayGridContent(content, element, blockNumber) {
     var url = item.url.gben
     var text = item.text
     var image = `images/${item.image}`
-    grid.innerHTML += "<a href='" + url + "'><div class='item'><img class='grid-image' src='" + image + "'><p>" + text + "</p></div></a>"
+    grid.innerHTML += "<a href='" + url + "'><div class='grid-image'><img src='" + image + "'><p>" + text + "</p></div></a>";
   });
 };

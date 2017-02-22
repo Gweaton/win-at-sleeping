@@ -24,6 +24,9 @@ window.onload = function() {
     link.innerHTML = "<a href='" + url + "'>" + linkText + "</a>"
   })(pageContent, 3);
 
-  displayGridContent(pageContent, 'products', 4);
+  displayGridContent(pageContent, "products", 4);
+
+  displayHeaderContent(pageContent, 'third-header', 'third-subheader', 5);
+
 
 }
