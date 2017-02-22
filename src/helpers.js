@@ -8,8 +8,8 @@ function displayHeaderContent(content, header, subheader, blockNumber) {
   subheader.innerHTML = `<p>${subheading}<p>`;
 };
 
-function displayGridContent(content, blockNumber) {
-  var grid = document.getElementById("ideas");
+function displayGridContent(content, element, blockNumber) {
+  var grid = document.getElementById(element);
   var items = content.blocks[blockNumber].items
   items.forEach(function(item) {
     var url = item.url.gben

@@ -50,6 +50,11 @@ iframe {
   text-align: center;
 }
 
+#products a {
+  text-align: center;
+  color: black;
+}
+
 .grid-image {
   width: 100%;
 }

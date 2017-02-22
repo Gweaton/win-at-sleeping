@@ -15,7 +15,7 @@ window.onload = function() {
   displayHeaderContent(pageContent, 'first-header', 'first-subheader', 0);
   displayHeaderContent(pageContent, 'second-header', 'second-subheader', 2);
 
-  displayGridContent(pageContent, 3);
+  displayGridContent(pageContent, "ideas", 3);
 
   (function displayLink(content, blockNumber) {
     var link = document.getElementById("sleep-ideas");
@@ -23,5 +23,7 @@ window.onload = function() {
     var url = content.blocks[blockNumber].cta.url.gben;
     link.innerHTML = "<a href='" + url + "'>" + linkText + "</a>"
   })(pageContent, 3);
+
+  displayGridContent(pageContent, 'products', 4);
 
 }
