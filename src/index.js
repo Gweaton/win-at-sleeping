@@ -24,6 +24,13 @@ window.onload = function() {
       var image = `images/${item.image}`
       grid.innerHTML += "<div class='item'> <a href='" + url + "'>" + "<img class='grid-image' src='" + image + "'><p>" + text + "</p></a></div>"
     });
-  })(pageContent, 3)
+  })(pageContent, 3);
+
+  (function displayLink(content, blockNumber) {
+    var link = document.getElementById("sleep-ideas");
+    var linkText = content.blocks[blockNumber].cta.text;
+    var url = content.blocks[blockNumber].cta.gben;
+    link.innerHTML = "<a href='" + url + "'>" + linkText + "</a>"
+  })(pageContent, 3);
 
 }
