@@ -29,7 +29,7 @@ window.onload = function() {
   (function displayLink(content, blockNumber) {
     var link = document.getElementById("sleep-ideas");
     var linkText = content.blocks[blockNumber].cta.text;
-    var url = content.blocks[blockNumber].cta.gben;
+    var url = content.blocks[blockNumber].cta.url.gben;
     link.innerHTML = "<a href='" + url + "'>" + linkText + "</a>"
   })(pageContent, 3);
 

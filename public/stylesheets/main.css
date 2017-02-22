@@ -46,6 +46,10 @@ iframe {
   color: black;
 }
 
+.link {
+  text-align: center;
+}
+
 .grid-image {
   width: 100%;
 }
