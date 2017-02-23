@@ -17,7 +17,7 @@ function displayYoutubePoster(content) {
 function displayYoutubeVideo(content) {
   var youtubeVideo = document.getElementById("youtube-video");
   var videoUrl = content.blocks[1].videoId;
-  youtubeVideo.innerHTML = "<iframe class='player' frameborder='0' allowfullscreen='1' title='YouTube video player' width='640' height='390' src='https://www.youtube.com/embed/" + videoUrl + "'></iframe>"
+  youtubeVideo.innerHTML = "<iframe class='player' frameborder='0' title='YouTube video player' width='640' height='390' src='https://www.youtube.com/embed/" + videoUrl + "'></iframe>"
 }
 
 function displayIdeaGridContent(content, element, blockNumber) {

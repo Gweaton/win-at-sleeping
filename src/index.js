@@ -3,7 +3,7 @@ window.onload = function() {
   //displays first Header Module
   displayHeaderContent(pageContent, 'first-header', 'first-subheader', 0);
   //displays youtube Module
-  displayYoutubePoster(pageContent);
+  // displayYoutubePoster(pageContent);
   displayYoutubeVideo(pageContent);
 
   //displays second Header Module
