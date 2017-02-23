@@ -20,3 +20,11 @@ function showSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
+// Image animation
+$(function() {
+	var secondImage = $(".second");
+	setInterval(function() {
+		secondImage.toggleClass("hide");
+	}, 1000);
+});
