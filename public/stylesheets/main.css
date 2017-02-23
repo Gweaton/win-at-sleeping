@@ -32,6 +32,17 @@
   width: 80%;
 }
 
+.product-grid {
+  margin-top: -20px;
+  width: 100%;
+  font-size: 12px;
+}
+
+.product-grid a {
+  text-align: center;
+  color: black;
+}
+
 .youtube {
   position: relative;
   padding-bottom: 56.25%;
@@ -166,7 +177,13 @@
 
   .sleep-ideas-grid {
     width: 100%;
+    margin-left: 20px;
   }
+
+  .product-grid {
+    width: 80%;
+  }
+
   .col-12 {
     width: 100%;
   }
