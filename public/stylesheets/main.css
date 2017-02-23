@@ -33,7 +33,7 @@
 }
 
 .product-grid {
-  margin-top: -20px;
+  /*margin-top: -20px;*/
   width: 100%;
   font-size: 12px;
 }
@@ -92,8 +92,9 @@
   margin: auto;
 }
 .seq-image img {
-  width: 100%;
+  width: 40%;
   margin: 1%;
+  margin-left: 10%;
   float: left;
   height: 50%;
 }
@@ -101,7 +102,8 @@
 .item-details{
   width: 23%;
   margin: 1%;
-  float: left;
+  margin-right: 20%;
+  float: right;
   height: 50%;
 }
 
