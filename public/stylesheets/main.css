@@ -163,18 +163,6 @@
 /* For desktop: */
 @media only screen and (min-width: 480px) {
   /*Headlines*/
-  .product {
-    width: 23%;
-    margin: 1%;
-    float: left;
-    height: 50%;
-  }
-  .col-4 {
-    width: 31%;
-    margin: 10px;
-    float: left;
-    height: 50%;
-  }
   .header {
     width: 70%;
     text-align: center;
@@ -182,7 +170,7 @@
   .subheading {
     font-size: 12px;
   }
-
+  /*Youtube*/
   .youtube {
     position: relative;
     padding-bottom: 56.25%;
@@ -194,25 +182,36 @@
     width: 83.33%;
   }
 
-  /*sleep ideas*/
-
+  /*Sleep ideas grid*/
   .sleep-ideas-grid {
     width: 100%;
     margin-left: 20px;
   }
 
-  /*products*/
-
+  .col-4 {
+    width: 31%;
+    margin: 10px;
+    float: left;
+    height: 50%;
+  }
+  /*Product Grid*/
   .product-grid {
     width: 80%;
     padding-bottom: 35%;
+  }
+
+  .product {
+    width: 23%;
+    margin: 1%;
+    float: left;
+    height: 50%;
   }
 
   .col-12 {
     width: 100%;
   }
 
-  /*carousel*/
+  /*Sleep tips carousel*/
 
   .carousel-button {
     position: absolute;
