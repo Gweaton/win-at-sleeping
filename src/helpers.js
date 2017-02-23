@@ -8,14 +8,25 @@ function displayHeaderContent(content, header, subheader, blockNumber) {
   subheader.innerHTML = `<p>${subheading}<p>`;
 };
 
-function displayGridContent(content, element, blockNumber) {
+function displayIdeaGridContent(content, element, blockNumber) {
   var grid = document.getElementById(element);
   var items = content.blocks[blockNumber].items;
   items.forEach(function(item) {
     var url = item.url.gben
     var text = item.text
     var image = `images/${item.image}`
-    grid.innerHTML += "<a href='" + url + "'><div class='grid-image'><img src='" + image + "'><p>" + text + "</p></div></a>";
+    grid.innerHTML += "<a href='" + url + "'><div class='col-4'><img src='" + image + "'><p>" + text + "</p></div></a>";
+  });
+};
+
+function displayProductGridContent(content, element, blockNumber) {
+  var grid = document.getElementById(element);
+  var items = content.blocks[blockNumber].items;
+  items.forEach(function(item) {
+    var url = item.url.gben
+    var text = item.text
+    var image = `images/${item.image}`
+    grid.innerHTML += "<a href='" + url + "'><div class='col-3'><img src='" + image + "'><p>" + text + "</p></div></a>";
   });
 };
 
