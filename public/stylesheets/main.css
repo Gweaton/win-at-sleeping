@@ -2,15 +2,14 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, sans-serif;
   margin: 0 auto 0;
-
 }
 
 /* Building mobile first: */
 .header {
-    width: 80%;
-    text-align: center;
-    font-size: 0.8em;
-    margin-bottom: 20px;
+  width: 80%;
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 20px;
 }
 
 .subheading {
@@ -24,9 +23,13 @@
 }
 
 [class="col-3"] {
-    width: 50%;
-    float: left;
-    height: 50%;
+  width: 50%;
+  float: left;
+  height: 50%;
+}
+
+.sleep-ideas-grid {
+  width: 80%;
 }
 
 .youtube {
@@ -48,45 +51,20 @@
   height: 80%;
 }
 
-/* For desktop: */
-@media only screen and (min-width: 480px) {
-  .col-3 {
-    width: 23%;
-    margin: 1%;
-    float: left;
-    height: 50%;
-  }
-  .col-4 {
-    width: 31%;
-    margin: 1%;
-    float: left;
-    height: 50%;
-  }
-  .header {
-    width: 70%;
-    text-align: center;
-   }
-  .subheading {
-    font-size: 12px;
-  }
-
-  .youtube {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-    margin-top: 20px;
-    margin-bottom: -10%;
-    width: 83.33%;
-  }
-
-
-  .col-12 {
-    width: 100%;
-  }
+#ideas a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  margin-bottom: 30px;
 }
 
+#ideas p {
+  padding-bottom: 10px;
+}
+
+.link {
+  text-align: center;
+}
 
 .carousel-item {
   display: none;
@@ -109,15 +87,6 @@
   margin: 1%;
   float: left;
   height: 50%;
-}
-
-.poster-wrap {
-  max-width: 100%;
-}
-
-.player {
-  width: 100%;
-  height: auto;
 }
 
 .col-4 img {
@@ -161,63 +130,76 @@
   margin-top: -22px;
 }
 
+/* For desktop: */
+@media only screen and (min-width: 480px) {
+  .col-3 {
+    width: 23%;
+    margin: 1%;
+    float: left;
+    height: 50%;
+  }
+  .col-4 {
+    width: 31%;
+    margin: 10px;
+    float: left;
+    height: 50%;
+  }
+  .header {
+    width: 70%;
+    text-align: center;
+  }
+  .subheading {
+    font-size: 12px;
+  }
 
+  .youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: -10%;
+    width: 83.33%;
+  }
+
+  .sleep-ideas-grid {
+    width: 100%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
 
 
 
 /*
 
-.header {
-  text-align: center;
-  margin: 0 auto 0;
-  padding: 0 10% 0 10%;
-}
 
-.intro-text {
-  font-size: 1em;
-}
-
-
-
-.youtube {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-
-.youtube iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
 .item {
-  float: left;
-  margin: 2%;
-  width: 28%;
-  height: 50%;
-  font-size: 12px;
+float: left;
+margin: 2%;
+width: 28%;
+height: 50%;
+font-size: 12px;
 }
 
 .item a {
-  text-decoration: none;
-  color: black;
+text-decoration: none;
+color: black;
 }
 
 .link {
-  text-align: center;
+text-align: center;
 }
 
 #products a {
-  text-align: center;
-  color: black;
+text-align: center;
+color: black;
 }
 
 .grid-image {
-  width: 100%;
+width: 100%;
 }
 */
