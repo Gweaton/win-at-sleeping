@@ -1,29 +1,23 @@
 window.onload = function() {
 
-  (function displayYoutubePoster(content) {
-    var youtubePoster = document.getElementById("youtube-poster");
-    var image = `images/${content.blocks[1].image}`
-    youtubePoster.innerHTML = `<img class='poster-wrap' src=${image} >`
-  })(pageContent);
-
-  (function displayYoutubeVideo(content) {
-    var youtubeVideo = document.getElementById("youtube-video");
-    var videoUrl = content.blocks[1].videoId;
-    youtubeVideo.innerHTML = "<iframe class='player' frameborder='0' allowfullscreen='1' title='YouTube video player' width='640' height='390' src='https://www.youtube.com/embed/" + videoUrl + "'></iframe>"
-  })(pageContent);
-
+  //displays first Header Module
   displayHeaderContent(pageContent, 'first-header', 'first-subheader', 0);
+  //displays youtube Module
+  displayYoutubePoster(pageContent);
+  displayYoutubeVideo(pageContent);
+
+  //displays second Header Module
   displayHeaderContent(pageContent, 'second-header', 'second-subheader', 2);
 
+  //displays Idea Grid Module
   displayIdeaGridContent(pageContent, "ideas", 3);
-
   displayLink(pageContent, 3);
 
+  //displays Product Grid Module
   displayProductGridContent(pageContent, "products", 4);
 
+  //displays Carousel Module
   displayHeaderContent(pageContent, 'third-header', 'third-subheader', 5);
-
   displayCarouselContent(pageContent, 6);
-
   showSlides(1);
 }
