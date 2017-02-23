@@ -36,6 +36,7 @@
   margin-top: -20px;
   width: 100%;
   font-size: 12px;
+  margin-bottom: 20px;
 }
 
 .product-grid a {
@@ -182,6 +183,7 @@
 
   .product-grid {
     width: 80%;
+    padding-bottom: 35%;
   }
 
   .col-12 {

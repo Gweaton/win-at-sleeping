@@ -58,6 +58,6 @@ function displayCarouselContent(content, blockNumber) {
     var heading = item.heading;
     var text = item.text;
     var images = item.images;
-    carousel.innerHTML += "<div class='carousel-item fade'><div class='col-3 item-details'><h2>" + heading + "</h2> <h3>IKEA Sleep Coach says: <h3><p>" + text +"</p></div><div class='col-3 seq-image'><img id='" +images[0] + "' src='images/" + images[0] +"'/></div></div>"
+    carousel.innerHTML += "<div class='carousel-item fade'><div class='col-3 item-details'><h2>" + heading + "</h2> <h3>IKEA Sleep Coach says: </h3><p>" + text +"</p></div><div class='col-3 seq-image'><img id='" +images[0] + "' src='images/" + images[0] +"'/></div></div>"
   });
 };
