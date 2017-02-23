@@ -9,12 +9,17 @@
 .header {
     width: 80%;
     text-align: center;
+    font-size: 0.8em;
     margin-bottom: 20px;
+}
+
+.subheading {
+  font-size: 12px;
 }
 
 .headline {
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 0.8em;
   margin: 10px 0 10px 0;
 }
 
