@@ -92,6 +92,7 @@
 }
 .carousel-item {
   display: none;
+  border: 1px solid grey;
 }
 
 .carousel-container {
@@ -151,6 +152,13 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* Social buttons*/
+.social-button {
+  position: relative;
+  background-color: #316497;
+  z-index: 1;
 }
 
 
@@ -234,5 +242,22 @@
     color: #316497;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  .social-button {
+    position: absolute;
+    width: auto;
+    margin-top: 400px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #316497;
+    z-index: 1;
+  }
+
+  .twitter {
+    margin-left: 40%;
+  }
+
+  .facebook {
+    margin-left: 60%;
   }
 }
