@@ -1,3 +1,5 @@
+//Slideshow
+
 function changeSlide(n) {
   showSlides(slideIndex += n);
 }
