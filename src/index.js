@@ -3,7 +3,7 @@ window.onload = function() {
   (function displayYoutubePoster(content) {
     var youtubePoster = document.getElementById("youtube-poster");
     var image = `images/${content.blocks[1].image}`
-    youtubePoster.innerHTML = `<img src=${image} >`
+    youtubePoster.innerHTML = `<img class='poster-wrap' src=${image} >`
   })(pageContent);
 
   (function displayYoutubeVideo(content) {
