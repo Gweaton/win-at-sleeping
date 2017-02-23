@@ -131,7 +131,7 @@
   max-width: 100%;
 }
 
-.col-3 img {
+.product img {
   max-width: 100%;
 }
 
@@ -157,7 +157,7 @@
 
 /* For desktop: */
 @media only screen and (min-width: 480px) {
-  .col-3 {
+  .product {
     width: 23%;
     margin: 1%;
     float: left;
@@ -237,36 +237,3 @@
     margin-bottom: 5px;
   }
 }
-
-
-
-/*
-
-
-
-.item {
-float: left;
-margin: 2%;
-width: 28%;
-height: 50%;
-font-size: 12px;
-}
-
-.item a {
-text-decoration: none;
-color: black;
-}
-
-.link {
-text-align: center;
-}
-
-#products a {
-text-align: center;
-color: black;
-}
-
-.grid-image {
-width: 100%;
-}
-*/
