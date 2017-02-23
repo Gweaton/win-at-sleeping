@@ -29,7 +29,7 @@ function displayIdeaGridContent(content, element, blockNumber) {
     var url = item.url.gben
     var text = item.text
     var image = `images/${item.image}`
-    grid.innerHTML += "<a href='" + url + "'><div class='col-4'><img src='" + image + "'><p>" + text + "</p></div></a>";
+    grid.innerHTML += "<a href='" + url + "'><div class='idea-grid-item'><img src='" + image + "'><p>" + text + "</p></div></a>";
   });
 };
 

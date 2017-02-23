@@ -55,6 +55,10 @@
   width: 80%;
 }
 
+.idea-grid-item img {
+  max-width: 100%;
+}
+
 #ideas a {
   text-decoration: none;
   color: black;
@@ -136,9 +140,6 @@
 #left {
   left: 0;
 }
-.col-4 img {
-  max-width: 100%;
-}
 
 /*Fade animation*/
 
@@ -188,7 +189,7 @@
     margin-left: 20px;
   }
 
-  .col-4 {
+  .idea-grid-item {
     width: 31%;
     margin: 10px;
     float: left;
