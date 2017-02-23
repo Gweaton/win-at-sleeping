@@ -1,11 +1,21 @@
 * {
   box-sizing: border-box;
   font-family: Verdana, Geneva, sans-serif;
+  margin: 0 auto 0;
+
 }
 
 /* Building mobile first: */
-[class*="col-"] {
-    width: 100%;
+.header {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.headline {
+  text-transform: uppercase;
+  font-size: 1em;
+  margin: 10px 0 10px 0;
 }
 
 [class="col-3"] {
@@ -16,24 +26,33 @@
 
 /* For desktop: */
 @media only screen and (min-width: 480px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 23%;
-            margin: 1%;
-            float: left;
-            height: 50%;}
-    .col-4 {width: 31%;
-            margin: 1%;
-            float: left;
-            height: 50%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+  .col-3 {
+    width: 23%;
+    margin: 1%;
+    float: left;
+    height: 50%;
+  }
+  .col-4 {
+    width: 31%;
+    margin: 1%;
+    float: left;
+    height: 50%;
+  }
+  .header {
+    width: 40%;
+    text-align: center;
+   }
+  .intro-text {
+    font-size: 12px;
+  }
+
+  .youtube {
+    margin-top: 20px;
+    width: 83.33%;
+  }
+  .col-12 {
+    width: 100%;
+  }
 }
 
 
@@ -76,8 +95,6 @@
 .col-3 img {
   max-width: 100%;
 }
-
-
 
 #right {
   transform: scaleX(-1);
