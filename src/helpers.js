@@ -36,8 +36,7 @@ function displayCarouselContent(content, blockNumber) {
   items.forEach(function(item) {
     var heading = item.heading;
     var text = item.text;
-    var image1 = `images/${item.images[0]}`;
-    var image2 = `images/${item.images[1]}`;
-    carousel.innerHTML += "<div class='carousel-item'><img src='" + image1 +"'/><img src='" + image2 +"'/><h2>" + heading + "</h2> <h3>IKEA Sleep Coach says: <h3><p>" + text +"</p></div>"
+    var images = item.images;
+    carousel.innerHTML += "<div class='carousel-item fade'><div class='col-3 item-details'><h2>" + heading + "</h2> <h3>IKEA Sleep Coach says: <h3><p>" + text +"</p></div><div class='col-3 seq-image'><img id='" +images[0] + "' src='images/" + images[0] +"'/></div></div>"
   });
 };

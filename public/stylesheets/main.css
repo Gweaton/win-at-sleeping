@@ -36,6 +36,30 @@
     .col-12 {width: 100%;}
 }
 
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.seq-image img {
+  width: 100%;
+  margin: 1%;
+  float: left;
+  height: 50%;
+}
+
+.item-details{
+  width: 23%;
+  margin: 1%;
+  float: left;
+  height: 50%;
+}
+
 .poster-wrap {
   max-width: 100%;
 }
@@ -54,6 +78,29 @@
 }
 
 
+
+.right {
+  transform: scaleX(-1);
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+}
 
 
 
@@ -119,7 +166,4 @@ iframe {
 .grid-image {
   width: 100%;
 }
-
-.right {
-  transform: scaleX(-1);
-}*/
+*/
