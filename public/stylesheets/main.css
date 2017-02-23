@@ -99,20 +99,24 @@
   height: 50%;
 }
 
-.item-details{
+/*carousel*/
+
+.item-details {
   width: 23%;
   margin: 1%;
-  margin-right: 20%;
+  margin-right: 10%;
   float: right;
   height: 50%;
 }
 
-.col-4 img {
-  max-width: 100%;
-}
+/*carousel buttons*/
 
-.col-3 img {
-  max-width: 100%;
+.carousel-button {
+  position: absolute;
+  width: auto;
+  margin-top: 70px;
+  background-color: #316497;
+  z-index: 1;
 }
 
 #right {
@@ -123,6 +127,15 @@
 #left {
   left: 0;
 }
+.col-4 img {
+  max-width: 100%;
+}
+
+.col-3 img {
+  max-width: 100%;
+}
+
+/*fade animation*/
 
 .fade {
   -webkit-animation-name: fade;
@@ -141,12 +154,6 @@
   to {opacity: 1}
 }
 
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-}
 
 /* For desktop: */
 @media only screen and (min-width: 480px) {
@@ -181,10 +188,14 @@
     width: 83.33%;
   }
 
+  /*sleep ideas*/
+
   .sleep-ideas-grid {
     width: 100%;
     margin-left: 20px;
   }
+
+  /*products*/
 
   .product-grid {
     width: 80%;
@@ -193,6 +204,37 @@
 
   .col-12 {
     width: 100%;
+  }
+
+  /*carousel*/
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 70px;
+    background-color: #316497;
+  }
+
+  .seq-image img {
+    width: 40%;
+    margin: 1%;
+    margin-left: 10%;
+    float: left;
+    height: 50%;
+  }
+
+  .item-details {
+    width: 23%;
+    font-size: 20px;
+    margin: 10% 20% 10% 1%;
+    float: right;
+    height: 50%;
+  }
+  .item-details h3 {
+    color: #316497;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 
