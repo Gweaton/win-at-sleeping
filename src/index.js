@@ -17,12 +17,7 @@ window.onload = function() {
 
   displayIdeaGridContent(pageContent, "ideas", 3);
 
-  (function displayLink(content, blockNumber) {
-    var link = document.getElementById("sleep-ideas");
-    var linkText = content.blocks[blockNumber].cta.text;
-    var url = content.blocks[blockNumber].cta.url.gben;
-    link.innerHTML = "<a href='" + url + "'>" + linkText + "</a>"
-  })(pageContent, 3);
+  displayLink(pageContent, 3);
 
   displayProductGridContent(pageContent, "products", 4);
 
@@ -30,30 +25,5 @@ window.onload = function() {
 
   displayCarouselContent(pageContent, 6);
 
-  plusSlides(1)
-  plusSlides(-1)
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("carousel-item");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slides[slideIndex-1].style.display = "block";
+  showSlides(1);
 }

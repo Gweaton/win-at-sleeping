@@ -19,6 +19,13 @@ function displayIdeaGridContent(content, element, blockNumber) {
   });
 };
 
+function displayLink(content, blockNumber) {
+  var link = document.getElementById("sleep-ideas");
+  var linkText = content.blocks[blockNumber].cta.text;
+  var url = content.blocks[blockNumber].cta.url.gben;
+  link.innerHTML = "<a href='" + url + "'>" + linkText + "</a>"
+}
+
 function displayProductGridContent(content, element, blockNumber) {
   var grid = document.getElementById(element);
   var items = content.blocks[blockNumber].items;

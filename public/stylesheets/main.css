@@ -79,12 +79,12 @@
 
 
 
-.right {
+#right {
   transform: scaleX(-1);
   right: 0;
 }
 
-.left {
+#left {
   left: 0;
 }
 

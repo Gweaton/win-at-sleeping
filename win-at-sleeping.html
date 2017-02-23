@@ -49,8 +49,8 @@
     <div class='carousel-container'>
       <div id='carousel'>
         <div id="carousel-navigation">
-          <button class="carousel-button left" onclick="plusSlides(-1)"><img id="prev-arrow" src="images/icons/arrow-left.svg"></button>
-          <button class="carousel-button right" onclick="plusSlides(1)"><img id="next-arrow" src="images/icons/arrow-left.svg"></button>
+          <button class="carousel-button" id="left" onclick='changeSlide(-1)'><img id="prev-arrow" src="images/icons/arrow-left.svg"></button>
+          <button class="carousel-button" id="right" onclick='changeSlide(1)'><img id="next-arrow" src="images/icons/arrow-left.svg"></button>
           <img class="social-button-twitter" src="images/icons/facebook-icon.svg">
           <img class="social-button-facebook" src="images/icons/twitter-icon.svg">
         </div>
@@ -61,6 +61,7 @@
   <script src='src/helpers.js'></script>
   <script src='data/page-content.js'></script>
   <script src='public/scripts/jquery-3.1.1.min.js'></script>
+  <script src='src/carousel.js'></script>
   <script src='src/index.js'></script>
 
 </body>
