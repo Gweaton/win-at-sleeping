@@ -5,6 +5,7 @@
 }
 
 /* Building mobile first: */
+/*Headers*/
 .header {
   width: 80%;
   text-align: center;
@@ -22,27 +23,7 @@
   margin: 10px 0 10px 0;
 }
 
-[class="col-3"] {
-  width: 50%;
-  float: left;
-  height: 50%;
-}
-
-.sleep-ideas-grid {
-  width: 80%;
-}
-
-.product-grid {
-  /*margin-top: -20px;*/
-  width: 100%;
-  font-size: 12px;
-}
-
-.product-grid a {
-  text-align: center;
-  color: black;
-}
-
+/*Youtube*/
 .youtube {
   position: relative;
   padding-bottom: 56.25%;
@@ -62,6 +43,18 @@
   height: 80%;
 }
 
+/*Sleep Idea Grid*/
+
+[class="col-3"] {
+  width: 50%;
+  float: left;
+  height: 50%;
+}
+
+.sleep-ideas-grid {
+  width: 80%;
+}
+
 #ideas a {
   text-decoration: none;
   color: black;
@@ -78,12 +71,30 @@
   margin-bottom: 60px;
 }
 
-.carousel-item {
-  display: none;
+/*Product Grid*/
+
+.product-grid {
+  /*margin-top: -20px;*/
+  width: 100%;
+  font-size: 12px;
 }
+
+.product-grid a {
+  text-align: center;
+  color: black;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+/*Sleep tips carousel*/
 
 #fourth-header {
   margin-top: 100px;
+}
+.carousel-item {
+  display: none;
 }
 
 .carousel-container {
@@ -99,8 +110,6 @@
   height: 50%;
 }
 
-/*carousel*/
-
 .item-details {
   width: 23%;
   margin: 1%;
@@ -109,7 +118,7 @@
   height: 50%;
 }
 
-/*carousel buttons*/
+/*Carousel buttons*/
 
 .carousel-button {
   position: absolute;
@@ -131,11 +140,7 @@
   max-width: 100%;
 }
 
-.product img {
-  max-width: 100%;
-}
-
-/*fade animation*/
+/*Fade animation*/
 
 .fade {
   -webkit-animation-name: fade;
@@ -157,6 +162,7 @@
 
 /* For desktop: */
 @media only screen and (min-width: 480px) {
+  /*Headlines*/
   .product {
     width: 23%;
     margin: 1%;
