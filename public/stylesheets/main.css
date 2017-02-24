@@ -10,7 +10,7 @@
   width: 80%;
   text-align: center;
   font-size: 0.8em;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .subheading {
@@ -66,7 +66,8 @@
 
 .link {
   text-align: center;
-  margin-bottom: 60px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 /*Product Grid*/
@@ -74,6 +75,7 @@
 .product-grid {
   width: 100%;
   font-size: 12px;
+  margin-top: -20px;
 }
 
 .product-grid a {
@@ -95,7 +97,7 @@
 /*Sleep tips carousel*/
 
 #fourth-header {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .carousel-item {
   display: none;
@@ -129,6 +131,10 @@
 }
 .item-details h3 {
   color: #316497;
+}
+
+.link {
+  margin-bottom: 40px;
 }
 
 
@@ -233,6 +239,7 @@
   /*Product Grid*/
   .product-grid {
     width: 80%;
+    margin-top: 10px;
     padding-bottom: 35%;
   }
 
