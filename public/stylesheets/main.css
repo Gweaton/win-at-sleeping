@@ -99,7 +99,6 @@
 .carousel-container {
   max-width: 100%;
   position: relative;
-  margin: auto;
 }
 
 .seq-image .second {
@@ -135,10 +134,10 @@
 
 .carousel-button {
   position: absolute;
-  width: auto;
-  margin-top: 70px;
+  margin-top: 30%;
   background-color: #316497;
   z-index: 3;
+  border-radius: 5px;
 }
 
 #right {
@@ -177,13 +176,12 @@
 .social-button {
   position: absolute;
   width: auto;
-  margin-top: 400px;
+  margin-top: 80%;
   margin-bottom: 20px;
   border-radius: 50%;
   background-color: #316497;
   z-index: 3;
 }
-
 
 .twitter {
   margin-left: 40%;
