@@ -103,6 +103,13 @@ var pageContent = {
 			}
 		}]
 	}, {
+		"cta": {
+			"text": "Discover more bedroom items",
+			"url": {
+				"gben": "http://www.ikea.com/gb/en/ideas/?N=0+4294967085&Nr=content.type%3Ai%3Aideas&Ns=rank%7C0&t=ideas"
+			}
+		}
+	}, {
 		"type": "Heading",
 		"heading": "Our IKEA Sleep Coach",
 		"subheading": "Get ready for drift off with our very own tips for a Wonderful Everynight"
