@@ -1,34 +1,28 @@
 window.onload = function() {
 
-  (function displayYoutubePoster(content) {
-    var youtubePoster = document.getElementById("youtube-poster");
-    var image = `images/${content.blocks[1].image}`
-    youtubePoster.innerHTML = `<img src=${image} >`
-  })(pageContent);
+  //displays first Header Module
+  displayHeaderContent(pageContent, 'first-header', 0);
+  displaySubheaderContent(pageContent, 'first-subheader', 0);
 
-  (function displayYoutubeVideo(content) {
-    var youtubeVideo = document.getElementById("youtube-video");
-    var videoUrl = content.blocks[1].videoId;
-    youtubeVideo.innerHTML = "<iframe class='player' frameborder='0' allowfullscreen='1' title='YouTube video player' width='640' height='390' src='https://www.youtube.com/embed/" + videoUrl + "'></iframe>"
-  })(pageContent);
+  //displays youtube Module
+  // displayYoutubePoster(pageContent);
+  displayYoutubeVideo(pageContent);
 
-  displayHeaderContent(pageContent, 'first-header', 'first-subheader', 0);
-  displayHeaderContent(pageContent, 'second-header', 'second-subheader', 2);
+  //displays second Header Module
+  displayHeaderContent(pageContent, 'second-header', 2);
+  displaySubheaderContent(pageContent, 'second-subheader', 2);
 
-  displayGridContent(pageContent, "ideas", 3);
+  //displays Idea Grid Module
+  displayIdeaGridContent(pageContent, "ideas", 3);
+  displayLink(pageContent, 3);
 
-  (function displayLink(content, blockNumber) {
-    var link = document.getElementById("sleep-ideas");
-    var linkText = content.blocks[blockNumber].cta.text;
-    var url = content.blocks[blockNumber].cta.url.gben;
-    link.innerHTML = "<a href='" + url + "'>" + linkText + "</a>"
-  })(pageContent, 3);
+  //displays Product Grid Module
+  displayHeaderContent(pageContent, 'third-header', 4);
+  displayProductGridContent(pageContent, "products", 4);
 
-  displayGridContent(pageContent, "products", 4);
-
-  displayHeaderContent(pageContent, 'third-header', 'third-subheader', 5);
-
-  displayCarouselContent(pageContent, 6)
-
-
+  //displays Carousel Module
+  displayHeaderContent(pageContent, 'fourth-header', 5);
+  displaySubheaderContent(pageContent, 'fourth-subheader', 5)
+  displayCarouselContent(pageContent, 6);
+  showSlides(1);
 }

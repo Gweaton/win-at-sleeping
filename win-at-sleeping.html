@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
   <link rel="stylesheet" href="public/stylesheets/main.css">
+
   <title> Win at Sleeping </title>
 </head>
 
@@ -13,49 +14,56 @@
   <section class='intro'>
     <div class='header'>
       <div class='headline' id='first-header'></div>
-      <div class='intro-text' id='first-subheader'></div>
+      <div class='subheading' id='first-subheader'></div>
     </div>
   </section>
 <!-- Youtube video module -->
-    <div class='youtube'>
-      <div id='youtube-poster'></div>
-      <div id='youtube-video'></div>
-    </div>
+  <div class='youtube'>
+    <div id='youtube-poster'></div>
+    <div id='youtube-video'></div>
+  </div>
 <!-- Header module -->
-    <div class='header'>
-      <div class='headline' id='second-header'></div>
-      <div class='subheading' id='second-subheader'></div>
-    </div>
+  <div class='header'>
+    <div class='headline' id='second-header'></div>
+    <div class='subheading' id='second-subheader'></div>
+  </div>
 
 <!-- imageGrid module -->
-    <div class='imageGrid'>
-      <div id='ideas'></div>
-      <div class ='link' id='sleep-ideas'></div>
-    </div>
+  <div class='sleep-ideas-grid'>
+    <div id='ideas'></div>
+    <div class='link' id='sleep-ideas'></div>
+  </div>
 
 <!-- productGrid module -->
-  <div class='productGrid'>
+  <div class='header'>
+    <div class='headline' id='third-header'></div>
+  </div>
+  <div class='product-grid'>
     <div id='products'></div>
   </div>
 
 <!-- Sleep tips module -->
   <div class='header'>
-    <div class='headline' id='third-header'></div>
-    <div class='subheading' id='third-subheader'></div>
+    <div class='headline' id='fourth-header'></div>
+    <div class='subheading' id='fourth-subheader'></div>
   </div>
 
-  <div id='carousel'>
-    <div id="carousel-navigation">
-      <button class="carousel-button left"><img id="prev-arrow" src="images/icons/arrow-left.svg"></button>
-      <button class="carousel-button right"><img id="next-arrow" src="images/icons/arrow-left.svg"></button>
-      <img class="social-button-twitter" src="images/icons/facebook-icon.svg">
-      <img class="social-button-facebook" src="images/icons/twitter-icon.svg">
+  <div class='carousel-container'>
+    <div id='carousel'>
+      <div id="carousel-navigation">
+        <button class="carousel-button" id="left" onclick='changeSlide(-1)'><img id="prev-arrow" src="images/icons/arrow-left.svg"></button>
+        <button class="carousel-button" id="right" onclick='changeSlide(1)'><img id="next-arrow" src="images/icons/arrow-left.svg"></button>
+        <img class="twitter social-button" src="images/icons/facebook-icon.svg">
+        <img class="facebook social-button" src="images/icons/twitter-icon.svg">
+      </div>
+    </div>
   </div>
 
-    <script src='src/helpers.js'></script>
-    <script src='data/page-content.js'></script>
-    <script src='public/scripts/jquery-3.1.1.min.js'></script>
-    <script src='src/index.js'></script>
+  <script src='src/helpers.js'></script>
+  <script src='data/page-content.js'></script>
+  <script src='public/scripts/jquery-3.1.1.min.js'></script>
+  <script src='src/carousel.js'></script>
+  <script src='src/index.js'></script>
 
 </body>
 
