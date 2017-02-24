@@ -1,5 +1,5 @@
 * {
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
   font-family: Verdana, Geneva, sans-serif;
   margin: 0 auto 0;
 }
@@ -131,6 +131,10 @@
   right: 0;
 }
 
+.hide {
+  opacity: 0;
+}
+
 #left {
   left: 0;
 }
@@ -156,11 +160,23 @@
 
 /* Social buttons*/
 .social-button {
-  position: relative;
+  position: absolute;
+  width: auto;
+  margin-top: 400px;
+  margin-bottom: 20px;
+  border-radius: 50%;
   background-color: #316497;
   z-index: 1;
 }
 
+
+.twitter {
+  margin-left: 40%;
+}
+
+.facebook {
+  margin-left: 60%;
+}
 
 /* For desktop: */
 @media only screen and (min-width: 480px) {
@@ -234,9 +250,6 @@
     top: 0;
     left: 0;
   }
-  .hide {
-    opacity: 0;
-  }
 
   .item-details {
     width: 23%;
@@ -250,7 +263,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  .social-button {
+  /*.social-button {
     position: absolute;
     width: auto;
     margin-top: 400px;
@@ -258,13 +271,6 @@
     border-radius: 50%;
     background-color: #316497;
     z-index: 1;
-  }
+  }*/
 
-  .twitter {
-    margin-left: 40%;
-  }
-
-  .facebook {
-    margin-left: 60%;
-  }
 }
