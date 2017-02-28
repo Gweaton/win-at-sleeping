@@ -1,6 +1,6 @@
 # Win at Sleeping
 
-## Tech test for Crew Studios
+## Tech test for Crew Studio
 
 My attempts at creating a few of the modules from IKEA's "Win at Sleeping" campaign.
 
